@@ -39,7 +39,9 @@ class _Libro1PageState extends State<Libro1Page> {
               ),
               child: Center(
                 child: ElevatedButton(
-                  child: Text('Leido', style: TextStyle(fontSize: 30, color: Colors.yellow[100])),
+                  child: Text('Leido',
+                      style:
+                          TextStyle(fontSize: 30, color: Colors.yellow[100])),
                   onPressed: () {
                     Navigator.pushNamed(context, 'libros');
                   },

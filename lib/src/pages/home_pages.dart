@@ -45,12 +45,14 @@ class _HomePageState extends State<HomePage> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Empezar',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.green[100],
+                    ),
                   ),
-                  color: Colors.green[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'niveles');
                   },
@@ -65,9 +67,9 @@ class _HomePageState extends State<HomePage> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
-                  child: Text('Iniciar sesion', style: TextStyle(fontSize: 30)),
-                  color: Colors.blue[100],
+                child: ElevatedButton(
+                  child: Text('Iniciar sesion', style: TextStyle(fontSize: 30,color: Colors.blue[100],)),
+                  
                   onPressed: () {
                     Navigator.pushNamed(context, 'login');
                   },
@@ -82,9 +84,9 @@ class _HomePageState extends State<HomePage> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
-                  child: Text('Ayuda', style: TextStyle(fontSize: 30)),
-                  color: Colors.orange[100],
+                child: ElevatedButton(
+                  child: Text('Ayuda', style: TextStyle(fontSize: 30,color: Colors.orange[100],)),
+                  
                   onPressed: () {
                     Navigator.pushNamed(context, 'ayuda');
                   },

@@ -36,9 +36,9 @@ class _Libro4PageState extends State<Libro4Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
-                  child: Text('Leido', style: TextStyle(fontSize: 30)),
-                  color: Colors.yellow[100],
+                child: ElevatedButton(
+                  child: Text('Leido', style: TextStyle(fontSize: 30,color: Colors.yellow[100],)),
+                  
                   onPressed: () {
                     Navigator.pushNamed(context, 'libros');
                   },

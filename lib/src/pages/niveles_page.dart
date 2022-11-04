@@ -36,12 +36,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Inicio',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.blue[100],
+                      ),
                     ),
-                    color: Colors.blue[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'home');
                     },
@@ -56,12 +58,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel prueba',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.blue[100],
+                      ),
                     ),
-                    color: Colors.blue[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel0');
                     },
@@ -76,12 +80,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel 1',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.blue[100],
+                      ),
                     ),
-                    color: Colors.blue[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel1');
                     },
@@ -96,12 +102,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel 2',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.green[100],
+                      ),
                     ),
-                    color: Colors.green[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel2');
                     },
@@ -116,12 +124,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel 3',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.yellow[100],
+                      ),
                     ),
-                    color: Colors.yellow[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel3');
                     },
@@ -136,12 +146,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel 4',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.orange[100],
+                      ),
                     ),
-                    color: Colors.orange[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel4');
                     },
@@ -156,12 +168,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel 5',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.purple[100],
+                      ),
                     ),
-                    color: Colors.purple[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel5');
                     },
@@ -176,12 +190,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel 6',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.teal[100],
+                      ),
                     ),
-                    color: Colors.teal[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel6');
                     },
@@ -196,12 +212,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel 7',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.red[100],
+                      ),
                     ),
-                    color: Colors.red[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel7');
                     },
@@ -216,12 +234,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel 8',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.green[100],
+                      ),
                     ),
-                    color: Colors.green[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel8');
                     },
@@ -236,12 +256,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel 9',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.brown[100],
+                      ),
                     ),
-                    color: Colors.brown[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel9');
                     },
@@ -256,12 +278,14 @@ class _NivelesPageState extends State<NivelesPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Nivel 10',
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.blue[100],
+                      ),
                     ),
-                    color: Colors.blue[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'nivel10');
                     },

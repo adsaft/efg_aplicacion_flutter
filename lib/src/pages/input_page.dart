@@ -49,7 +49,7 @@ class _InputPageState extends State<InputPage> {
             _crearPersona(),
             Divider(),
             Center(
-              child: RaisedButton(
+              child: ElevatedButton(
                 child: Text('Iniciar sesion'),
                 onPressed: () {
                   showAlertDialog(context);
@@ -64,7 +64,7 @@ class _InputPageState extends State<InputPage> {
 
   showAlertDialog(BuildContext context) {
     // set up the button
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () {
         Navigator.pushNamed(context, 'home');

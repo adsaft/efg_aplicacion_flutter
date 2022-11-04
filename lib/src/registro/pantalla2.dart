@@ -51,7 +51,7 @@ class StatePantalla2 extends State<Pantalla2> {
   Widget btnActualizar() {
     return Container(
         padding: const EdgeInsets.only(top: 45),
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text('Actualizar'),
           onPressed: actualizar,
         ));
@@ -60,7 +60,7 @@ class StatePantalla2 extends State<Pantalla2> {
   Widget btnEliminar() {
     return Container(
         padding: const EdgeInsets.only(top: 45),
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text('Eliminar'),
           onPressed: eliminar,
         ));

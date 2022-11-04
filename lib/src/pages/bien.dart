@@ -38,12 +38,14 @@ class _BienPageState extends State<BienPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Siguiente Nivel',
-                      style: TextStyle(fontSize: 40),
+                      style: TextStyle(
+                        fontSize: 40,
+                        color: Colors.green[100],
+                      ),
                     ),
-                    color: Colors.green[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'empezar');
                     },

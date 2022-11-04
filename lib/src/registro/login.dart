@@ -66,7 +66,7 @@ class _Login extends State<Login> {
   Widget login() {
     return Container(
         padding: const EdgeInsets.only(top: 45),
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text('Entrar'),
           onPressed: validarusuario,
         ));
@@ -75,7 +75,7 @@ class _Login extends State<Login> {
   Widget registrar() {
     return Container(
         padding: const EdgeInsets.only(top: 45),
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text('Registrate'),
           onPressed: registrarUsuario,
         ));
@@ -108,7 +108,7 @@ class _Login extends State<Login> {
           return AlertDialog(
             title: Text("Usuario Registrado"),
             actions: <Widget>[
-              RaisedButton(
+              ElevatedButton(
                 child: Text(
                   "Cerrar",
                   style: TextStyle(color: Colors.blue),

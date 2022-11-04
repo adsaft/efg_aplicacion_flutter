@@ -38,9 +38,12 @@ class _Libro5PageState extends State<Libro5Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
-                  child: Text('Leido', style: TextStyle(fontSize: 30)),
-                  color: Colors.yellow[100],
+                child: ElevatedButton(
+                  child: Text('Leido',
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.yellow[100],
+                      )),
                   onPressed: () {
                     Navigator.pushNamed(context, 'libros');
                   },

@@ -35,9 +35,12 @@ class _Nivel4PageState extends State<Nivel4Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
-                  child: Text('Listo', style: TextStyle(fontSize: 30)),
-                  color: Colors.yellow[100],
+                child: ElevatedButton(
+                  child: Text('Listo',
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.yellow[100],
+                      )),
                   onPressed: () {
                     Navigator.pushNamed(context, 'pregunta13');
                   },

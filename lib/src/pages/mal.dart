@@ -38,12 +38,14 @@ class _MalPageState extends State<MalPage> {
                   borderRadius: BorderRadius.circular(18.0),
                 ),
                 child: Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       'Volver a intentar',
-                      style: TextStyle(fontSize: 40),
+                      style: TextStyle(
+                        fontSize: 40,
+                        color: Colors.green[100],
+                      ),
                     ),
-                    color: Colors.green[100],
                     onPressed: () {
                       Navigator.pushNamed(context, 'empezar');
                     },
