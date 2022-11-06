@@ -38,12 +38,14 @@ class _Pregunta31PageState extends State<Pregunta31Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Tigre Africano',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.blue[100],
+                    ),
                   ),
-                  color: Colors.blue[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },
@@ -58,12 +60,14 @@ class _Pregunta31PageState extends State<Pregunta31Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Pantera',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.orange[100],
+                    ),
                   ),
-                  color: Colors.orange[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'pregunta32');
                   },
@@ -78,12 +82,14 @@ class _Pregunta31PageState extends State<Pregunta31Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Juancho',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.cyan[100],
+                    ),
                   ),
-                  color: Colors.cyan[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },
@@ -98,12 +104,14 @@ class _Pregunta31PageState extends State<Pregunta31Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Guerpado',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.green[100],
+                    ),
                   ),
-                  color: Colors.green[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },

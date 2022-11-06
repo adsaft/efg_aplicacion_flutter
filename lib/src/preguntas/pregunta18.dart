@@ -38,12 +38,14 @@ class _Pregunta18PageState extends State<Pregunta18Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Mover el cuerpo hacia los lados',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.blue[100],
+                    ),
                   ),
-                  color: Colors.blue[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },
@@ -58,12 +60,14 @@ class _Pregunta18PageState extends State<Pregunta18Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Realizar una actividad intelectual',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.yellow[100],
+                    ),
                   ),
-                  color: Colors.yellow[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },
@@ -78,12 +82,14 @@ class _Pregunta18PageState extends State<Pregunta18Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Mover objetos con la mente',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.brown[100],
+                    ),
                   ),
-                  color: Colors.brown[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },
@@ -98,12 +104,14 @@ class _Pregunta18PageState extends State<Pregunta18Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Practicar una actividad fisica',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.green[100],
+                    ),
                   ),
-                  color: Colors.green[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'pregunta19');
                   },

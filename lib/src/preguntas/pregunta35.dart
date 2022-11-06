@@ -38,12 +38,14 @@ class _Pregunta35PageState extends State<Pregunta35Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'El huevo de gallina',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.blue[100],
+                    ),
                   ),
-                  color: Colors.blue[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'pregunta36');
                   },
@@ -58,12 +60,14 @@ class _Pregunta35PageState extends State<Pregunta35Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'El huevo del pato',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.orange[100],
+                    ),
                   ),
-                  color: Colors.orange[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },
@@ -78,12 +82,14 @@ class _Pregunta35PageState extends State<Pregunta35Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'El caviar',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.cyan[100],
+                    ),
                   ),
-                  color: Colors.cyan[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },
@@ -98,12 +104,14 @@ class _Pregunta35PageState extends State<Pregunta35Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'El huevo de codorniz',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.green[100],
+                    ),
                   ),
-                  color: Colors.green[100],
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },

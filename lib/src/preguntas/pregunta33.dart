@@ -38,12 +38,12 @@ class _Pregunta33PageState extends State<Pregunta33Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Color Verde',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(fontSize: 30,color: Colors.red[100],),
                   ),
-                  color: Colors.red[100],
+                  
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },
@@ -58,12 +58,12 @@ class _Pregunta33PageState extends State<Pregunta33Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Color Rojo',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(fontSize: 30,color: Colors.grey[100],),
                   ),
-                  color: Colors.grey[100],
+                  
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },
@@ -78,12 +78,12 @@ class _Pregunta33PageState extends State<Pregunta33Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Color Blanco',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(fontSize: 30,color: Colors.yellow[100],),
                   ),
-                  color: Colors.yellow[100],
+                  
                   onPressed: () {
                     Navigator.pushNamed(context, 'pregunta34');
                   },
@@ -98,12 +98,12 @@ class _Pregunta33PageState extends State<Pregunta33Page> {
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     'Color Azul',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(fontSize: 30,color: Colors.blue[100],),
                   ),
-                  color: Colors.blue[100],
+                  
                   onPressed: () {
                     Navigator.pushNamed(context, 'mal');
                   },

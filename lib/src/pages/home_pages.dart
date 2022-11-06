@@ -1,6 +1,6 @@
-import 'package:efg_aplicacion/src/registro/login.dart';
-import 'package:efg_aplicacion/src/registro/pantalla2.dart';
-import 'package:efg_aplicacion/src/registro/usuarios.dart';
+//import 'package:efg_aplicacion/src/registro/login.dart';
+//import 'package:efg_aplicacion/src/registro/pantalla2.dart';
+//import 'package:efg_aplicacion/src/registro/usuarios.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
