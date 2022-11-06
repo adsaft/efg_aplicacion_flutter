@@ -13,9 +13,8 @@ class _Nivel1PageState extends State<Nivel1Page> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Center(
-          child: Text('El Principito Feliz'),
-        ),
+        centerTitle: true,
+        title: Text('El Principito Feliz'),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -27,9 +26,9 @@ class _Nivel1PageState extends State<Nivel1Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            Divider(),
+            SizedBox(height: 30),
             _cardPresentacion1(),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
               minWidth: 300.0,
               height: 150.0,
@@ -38,10 +37,14 @@ class _Nivel1PageState extends State<Nivel1Page> {
               ),
               child: Center(
                 child: ElevatedButton(
+                   style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.yellow[100],
+                          minimumSize: Size(300, 100)
+                        ), 
                   child: Text('Listo',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.yellow[100],
+                        color: Colors.black
                       )),
                   onPressed: () {
                     Navigator.pushNamed(context, 'pregunta1');

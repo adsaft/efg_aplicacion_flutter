@@ -13,6 +13,7 @@ class _PerfilPageState extends State<PerfilPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
+        centerTitle: true,
         title: Text('Perfil'),
       ),
       body: Container(
@@ -30,11 +31,11 @@ class _PerfilPageState extends State<PerfilPage> {
                   'lib/src/imagenes/Foto.jpg',
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
               _cardPresentacion1(),
-              Divider(),
+              SizedBox(height: 30),
               _cardPresentacion2(),
-              Divider()
+              SizedBox(height: 30),
             ]),
       ),
     );

@@ -1,3 +1,4 @@
+import 'package:efg_aplicacion/src/pages/niveles_page.dart';
 import 'package:flutter/material.dart';
 
 class MalPage extends StatefulWidget {
@@ -28,9 +29,9 @@ class _MalPageState extends State<MalPage> {
         child: ListView(
             padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
             children: <Widget>[
-              Divider(),
+              SizedBox(height: 30),
               _cardPresentacion1(),
-              Divider(),
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -47,8 +48,10 @@ class _MalPageState extends State<MalPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'empezar');
-                    },
+                    Navigator.of(context).pushReplacement(
+                    new MaterialPageRoute(builder: (BuildContext context) {
+                    return new NivelesPage();
+                    }));},
                   ),
                 ),
               ),

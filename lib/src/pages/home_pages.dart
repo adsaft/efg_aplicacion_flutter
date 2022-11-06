@@ -14,84 +14,99 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: Colors.green,
         title: Text('Bienvenido a la Aplicacion EFG!'),
       ),
       body: Container(
         decoration: BoxDecoration(
-          color: Color.fromRGBO(255, 255, 255, 0.19),
+          color: Color.fromARGB(232, 69, 255, 255),
           image: DecorationImage(
             image: AssetImage("lib/src/imagenes/Fondo.jpg"),
-            fit: BoxFit.cover,
+            fit: BoxFit.fitHeight,
           ),
         ),
         child: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
+          padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
           children: <Widget>[
             Center(
               child: Image.asset(
                 'lib/src/imagenes/EFG.png',
-                width: 200.0,
-                height: 150.0,
+                width: 300.0,
+                height: 300.0,
               ),
             ),
-            Divider(),
-            _cardPresentacion1(),
-            Divider(),
-            ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18.0),
-              ),
-              child: Center(
-                child: ElevatedButton(
-                  child: Text(
-                    'Empezar',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.green[100],
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                _cardPresentacion1(),
+                SizedBox(height: 30),
+                  ButtonTheme(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15.0),
+                    ),
+                    child: Center(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.green[100],
+                          minimumSize: Size(300, 100)
+                        ), 
+                        child: Text(
+                          'Juego',
+                          style: TextStyle(
+                            fontSize: 30,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.pushNamed(context, 'niveles');
+                        },
+                      ),
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.pushNamed(context, 'niveles');
-                  },
+                
+                SizedBox(height: 30),
+                ButtonTheme(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  child: Center(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue[100],
+                        minimumSize: Size(300, 100)
+                      ),
+                      child: Text('Iniciar sesion',
+                          style: TextStyle(
+                            fontSize: 30,
+                          )),
+                      onPressed: () {
+                        Navigator.pushNamed(context, 'login');
+                      },
+                    ),
+                  ),
                 ),
-              ),
-            ),
-            Divider(),
-            ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18.0),
-              ),
-              child: Center(
-                child: ElevatedButton(
-                  child: Text('Iniciar sesion', style: TextStyle(fontSize: 30,color: Colors.blue[100],)),
-                  
-                  onPressed: () {
-                    Navigator.pushNamed(context, 'login');
-                  },
+                SizedBox(height: 30),
+                ButtonTheme(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  child: Center(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.orange[100],
+                        minimumSize: Size(300, 100)
+                      ),
+                      child: Text('Ayuda',
+                          style: TextStyle(
+                            fontSize: 30,
+                          )),
+                      onPressed: () {
+                        Navigator.pushNamed(context, 'ayuda');
+                      },
+                    ),
+                  ),
                 ),
-              ),
-            ),
-            Divider(),
-            ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18.0),
-              ),
-              child: Center(
-                child: ElevatedButton(
-                  child: Text('Ayuda', style: TextStyle(fontSize: 30,color: Colors.orange[100],)),
-                  
-                  onPressed: () {
-                    Navigator.pushNamed(context, 'ayuda');
-                  },
-                ),
-              ),
+              ],
             ),
           ],
         ),
@@ -163,8 +178,11 @@ class _HomePageState extends State<HomePage> {
           Container(
             padding: EdgeInsets.all(10.0),
             child: Text(
-                'Hola, con esta pantalla puedes checar tus datos con la barra de ayuda lateral a la izquierda ',
-                style: TextStyle(fontSize: 20)),
+                'Hola, con esta pantalla puedes checar tus datos con la barra de ayuda lateral a la izquierda.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                )),
             color: Colors.yellow[100],
           )
         ],

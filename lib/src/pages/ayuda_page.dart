@@ -25,11 +25,11 @@ class _AyudaPageState extends State<AyudaPage> {
         child: ListView(
             padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
             children: <Widget>[
-              Divider(),
+              SizedBox(height: 30),
               _cardPresentacion1(),
-              Divider(),
+              SizedBox(height: 30),
               _cardPresentacion2(),
-              Divider(),
+              SizedBox(height: 30),
             ]),
       ),
     );

@@ -25,9 +25,9 @@ class _CopyrightPageState extends State<CopyrightPage> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            Divider(),
+            SizedBox(height: 30),
             _cardPresentacion1(),
-            Divider(),
+            SizedBox(height: 30),
           ],
         ),
       ),

@@ -14,9 +14,10 @@ class _BienPageState extends State<BienPage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.green,
-        title: Center(
-          child: Text('Respuesta'),
-        ),
+        centerTitle: true,
+        title:
+        Text('Respuesta'),
+
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -28,9 +29,9 @@ class _BienPageState extends State<BienPage> {
         child: ListView(
             padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
             children: <Widget>[
-              Divider(),
+             SizedBox(height: 30),
               _cardPresentacion1(),
-              Divider(),
+             SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,

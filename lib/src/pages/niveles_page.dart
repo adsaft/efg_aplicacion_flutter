@@ -12,11 +12,11 @@ class _NivelesPageState extends State<NivelesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: true,
         backgroundColor: Colors.green,
-        title: Center(
-          child: Text('Niveles'),
-        ),
+        centerTitle: true,
+        title: 
+          Text('Niveles'),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -29,6 +29,7 @@ class _NivelesPageState extends State<NivelesPage> {
         child: ListView(
             padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
             children: <Widget>[
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -37,55 +38,14 @@ class _NivelesPageState extends State<NivelesPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
-                    child: Text(
-                      'Inicio',
-                      style: TextStyle(
-                        fontSize: 30,
-                        color: Colors.blue[100],
-                      ),
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'home');
-                    },
-                  ),
-                ),
-              ),
-              Divider(),
-              ButtonTheme(
-                minWidth: 300.0,
-                height: 150.0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                ),
-                child: Center(
-                  child: ElevatedButton(
-                    child: Text(
-                      'Nivel prueba',
-                      style: TextStyle(
-                        fontSize: 30,
-                        color: Colors.blue[100],
-                      ),
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'nivel0');
-                    },
-                  ),
-                ),
-              ),
-              Divider(),
-              ButtonTheme(
-                minWidth: 300.0,
-                height: 150.0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                ),
-                child: Center(
-                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
                       'Nivel 1',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.blue[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
@@ -94,7 +54,7 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -103,11 +63,14 @@ class _NivelesPageState extends State<NivelesPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
                       'Nivel 2',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.green[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
@@ -116,7 +79,7 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -125,11 +88,14 @@ class _NivelesPageState extends State<NivelesPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.yellow[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
                       'Nivel 3',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.yellow[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
@@ -138,7 +104,7 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -147,11 +113,14 @@ class _NivelesPageState extends State<NivelesPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.orange[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
                       'Nivel 4',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.orange[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
@@ -160,7 +129,7 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -169,11 +138,14 @@ class _NivelesPageState extends State<NivelesPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.purple[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
                       'Nivel 5',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.purple[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
@@ -182,7 +154,7 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -191,11 +163,14 @@ class _NivelesPageState extends State<NivelesPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.teal[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
                       'Nivel 6',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.teal[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
@@ -204,7 +179,7 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -213,11 +188,14 @@ class _NivelesPageState extends State<NivelesPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.red[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
                       'Nivel 7',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.red[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
@@ -226,7 +204,7 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -235,11 +213,14 @@ class _NivelesPageState extends State<NivelesPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.yellowAccent[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
                       'Nivel 8',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.green[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
@@ -248,7 +229,7 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -257,11 +238,14 @@ class _NivelesPageState extends State<NivelesPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.brown[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
                       'Nivel 9',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.brown[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
@@ -270,7 +254,7 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
                 height: 150.0,
@@ -279,11 +263,14 @@ class _NivelesPageState extends State<NivelesPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
                       'Nivel 10',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.blue[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
@@ -292,7 +279,7 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              Divider(),
+              SizedBox(height: 30),
             ]),
       ),
     );
