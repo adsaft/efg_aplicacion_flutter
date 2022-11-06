@@ -10,6 +10,7 @@ class Pantalla1 extends StatefulWidget {
 
 class Statepantalla1 extends State<Pantalla1> {
   AccesoBD objbd = AccesoBD();
+  // ignore: deprecated_member_use
   List<Usuario> objListadoUsers = List();
   @override
   void initState() {
@@ -45,10 +46,12 @@ class Statepantalla1 extends State<Pantalla1> {
               return ListTile(
                 title: Text('${objListadoUsers[index].user}'),
                 onTap: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute<Null>(builder: (BuildContext context) {
+                  Navigator.of(context).pushReplacement(new MaterialPageRoute(builder: (BuildContext context) {
+      return new Pantalla2(objListadoUsers[index]);
+                      /*MaterialPageRoute<Null>(builder: (BuildContext context) {
                     return new Pantalla2(objListadoUsers[index]);
-                  }));
+                  })*/
+                }));
                 },
               );
             },

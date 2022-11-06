@@ -1,4 +1,4 @@
-import 'package:efg_aplicacion/src/pages/basededatos.dart';
+//import 'package:efg_aplicacion/src/pages/basededatos.dart';
 import 'package:flutter/material.dart';
 import 'package:efg_aplicacion/src/pages/ayuda_page.dart';
 import 'package:efg_aplicacion/src/pages/copyright_page.dart';
@@ -89,7 +89,7 @@ Map<String, WidgetBuilder> getApplicationRoutes() {
     'json': (BuildContext context) => JsonPage(),
     'login': (BuildContext context) => Login(),
     'pantalla1': (BuildContext context) => Pantalla1(),
-    'basedatos': (BuildContext context) => BaseDeDatosPage(),
+    //'basedatos': (BuildContext context) => BaseDeDatosPage(),
     'nivel0': (BuildContext context) => Nivel0Page(),
     'nivel1': (BuildContext context) => Nivel1Page(),
     'nivel2': (BuildContext context) => Nivel2Page(),

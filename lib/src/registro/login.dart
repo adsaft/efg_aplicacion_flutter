@@ -86,9 +86,8 @@ class _Login extends State<Login> {
     objBD.validarUsuario(vUser.text, vPwd.text).then((List<Usuario> users) {
       if (users.length > 0 && users != null) {
         print('validado');
-        Navigator.of(context)
-            .push(MaterialPageRoute<Null>(builder: (BuildContext context) {
-          return new HomePage();
+        Navigator.of(context).pushReplacement(new MaterialPageRoute(builder: (BuildContext context) {
+      return new HomePage();
         }));
       } else
         print('no validado');
