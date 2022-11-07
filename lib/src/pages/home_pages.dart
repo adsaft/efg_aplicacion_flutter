@@ -39,6 +39,9 @@ class _HomePageState extends State<HomePage> {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
+
+                _cardPresentacion2(),
+                 SizedBox(height: 30),
                 _cardPresentacion1(),
                 SizedBox(height: 30),
                   ButtonTheme(
@@ -189,4 +192,20 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+}
+Widget _cardPresentacion2() {
+  return Card(
+    child: Column(
+      children: <Widget>[
+        Container(
+          padding: EdgeInsets.all(10.0),
+          child: Text(
+              'El saber es, Crecer',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 30)),
+          color: Colors.pink[100],
+        )
+      ],
+    ),
+  );
 }
