@@ -160,13 +160,13 @@ class _HomePageState extends State<HomePage> {
                 Navigator.pushNamed(context, 'pantalla1');
               },
             ),
-            ListTile(
+            /*ListTile(
               title: Text('Base de Datos',
                   style: TextStyle(fontSize: 20.0, color: Colors.black)),
               onTap: () {
                 Navigator.pushNamed(context, 'basedatos');
               },
-            ),
+            ),*/
           ],
         ),
       ),
