@@ -14,9 +14,8 @@ class _Libro2PageState extends State<Libro2Page> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.green,
-        title: Center(
-          child: Text('El Sol y la Luna'),
-        ),
+        title: Text('El Sol y la Luna'),
+        centerTitle: true,
       ),
       body: Container(
         decoration: BoxDecoration(

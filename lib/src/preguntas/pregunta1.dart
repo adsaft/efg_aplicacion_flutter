@@ -39,83 +39,75 @@ class _Pregunta1PageState extends State<Pregunta1Page> {
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Rubies',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.red[100],
-                    ),
+                    style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
             SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18.0),
-              ),
-              child: Center(
-                child: ElevatedButton(
-                  child: Text(
-                    'plomo',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.grey[100],
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
-                  },
-                ),
-              ),
-            ),
-            SizedBox(height: 30),
-            ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18.0),
-              ),
-              child: Center(
-                child: ElevatedButton(
-                  child: Text(
-                    'Oro',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.yellow[100],
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
-                  },
-                ),
-              ),
-            ),
-            SizedBox(height: 30),
-            ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue[100],
-                  ),                  
+                      backgroundColor: Colors.grey[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
-                    'Zafiro',
-                    style: TextStyle(
-                      fontSize: 30,
-                    ),
+                    'plomo',
+                    style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'pregunta2');
+                    Navigator.pushReplacementNamed(context, 'mal');
+                  },
+                ),
+              ),
+            ),
+            SizedBox(height: 30),
+            ButtonTheme(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18.0),
+              ),
+              child: Center(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.yellow[100],
+                      minimumSize: Size(300, 100)),
+                  child: Text(
+                    'Oro',
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(context, 'mal');
+                  },
+                ),
+              ),
+            ),
+            SizedBox(height: 30),
+            ButtonTheme(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18.0),
+              ),
+              child: Center(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue[100],
+                      minimumSize: Size(300, 100)),
+                  child: Text(
+                    'Zafiro',
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(context, 'pregunta2');
                   },
                 ),
               ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:efg_aplicacion/src/pages/home_pages.dart';
 import 'package:efg_aplicacion/src/routes/routes.dart';
 /*import 'src/provider/libros_provider.dart';*/
-import 'package:provider/provider.dart';
+//import 'package:provider/provider.dart';
 
 void main() => runApp(AppState());
 

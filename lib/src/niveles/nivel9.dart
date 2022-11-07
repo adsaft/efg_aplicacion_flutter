@@ -13,9 +13,8 @@ class _Nivel9PageState extends State<Nivel9Page> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Center(
-          child: Text('El huevo y la gallina'),
-        ),
+        title: Text('El huevo y la gallina'),
+        centerTitle: true,
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -27,24 +26,25 @@ class _Nivel9PageState extends State<Nivel9Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            Divider(),
+            SizedBox(height: 30),
             _cardPresentacion1(),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.yellow[100],
+                      minimumSize: Size(300, 100)),
                   child: Text('Listo',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.yellow[100],
+                        color: Colors.black,
                       )),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'pregunta33');
+                    Navigator.pushReplacementNamed(context, 'pregunta33');
                   },
                 ),
               ),

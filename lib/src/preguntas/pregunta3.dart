@@ -28,97 +28,101 @@ class _Pregunta3PageState extends State<Pregunta3Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            Divider(),
+            SizedBox(height: 30),
             _cardPresentacion1(),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'En la Parte mas Alta de la Ciudad',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.blue[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.orange[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'En Medio de un Jardin',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.orange[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.cyan[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'En el Palacio de la Despreocupacion',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.cyan[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'pregunta4');
+                    Navigator.pushReplacementNamed(context, 'pregunta4');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'En la Parte mas Alta de una Montaña',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.green[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
           ],
         ),
       ),

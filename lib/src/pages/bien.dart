@@ -40,15 +40,18 @@ class _BienPageState extends State<BienPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green[100],
+                        minimumSize: Size(300, 100)),                    
                     child: Text(
-                      'Siguiente Nivel',
+                      'Continuar',
                       style: TextStyle(
                         fontSize: 40,
-                        color: Colors.green[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'empezar');
+                      Navigator.pushReplacementNamed(context, 'niveles');
                     },
                   ),
                 ),
@@ -66,9 +69,9 @@ Widget _cardPresentacion1() {
         Container(
           padding: EdgeInsets.all(10.0),
           child: Text(
-            'Muy Bien puedes pasar al Siguiente Nivel.',
-            style: TextStyle(fontSize: 40),
-            textAlign: TextAlign.justify,
+            'Muy Bien puedes continuar con el siguiente Nivel.',
+            style: TextStyle(fontSize: 45),
+            textAlign: TextAlign.center,
           ),
           color: Colors.blue[100],
         ),

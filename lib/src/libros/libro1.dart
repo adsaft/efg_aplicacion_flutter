@@ -14,9 +14,8 @@ class _Libro1PageState extends State<Libro1Page> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.green,
-        title: Center(
-          child: Text('El Principito Feliz'),
-        ),
+        title: Text('El Principito Feliz'),
+        centerTitle: true,
       ),
       body: Container(
         decoration: BoxDecoration(

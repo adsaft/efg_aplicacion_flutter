@@ -14,6 +14,7 @@ class _Nivel4PageState extends State<Nivel4Page> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Text('El lagarto está llorando'),
+        centerTitle: true,
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -25,24 +26,25 @@ class _Nivel4PageState extends State<Nivel4Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            Divider(),
+            SizedBox(height: 30),
             _cardPresentacion1(),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.yellow[100],
+                      minimumSize: Size(300, 100)),
                   child: Text('Listo',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.yellow[100],
+                        color: Colors.black,
                       )),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'pregunta13');
+                    Navigator.pushReplacementNamed(context, 'pregunta13');
                   },
                 ),
               ),
@@ -60,9 +62,9 @@ Widget _cardPresentacion1() {
       children: <Widget>[
         Container(
           child: Text(
-            'El lagarto está llorando.La lagarta está llorando.El lagarto y la lagarta con delantalitos blancos. Han perdido sin querer su anillo de desposados.¡Ay! su anillito de plomo,¡ay! su anillito plomado Un cielo grande y sin gente monta en su globo a los pájaros.El sol, capitán redondo,lleva un chaleco de raso.¡Miradlos qué viejos son!¡Qué viejos son los lagartos!¡Ay, cómo lloran y lloran!¡Ay, ay, cómo están llorando!',
+            'El lagarto está llorando.            La lagarta está llorando.             El lagarto y la lagarta con delantalitos blancos.                Han perdido sin querer su anillo de desposados.              ¡Ay! su anillito de plomo,                ¡ay! su anillito plomado Un cielo grande y sin gente monta en su globo a los pájaros.                     El sol, capitán redondo,lleva un chaleco de raso.                 ¡Miradlos qué viejos son!             ¡Qué viejos son los lagartos!                            ¡Ay, cómo lloran y lloran!¡Ay, ay, cómo están llorando!',
             style: TextStyle(fontSize: 30),
-            textAlign: TextAlign.justify,
+            textAlign: TextAlign.center,
             maxLines: null,
           ),
           color: Colors.purple[100],

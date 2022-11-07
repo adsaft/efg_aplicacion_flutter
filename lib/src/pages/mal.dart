@@ -40,18 +40,19 @@ class _MalPageState extends State<MalPage> {
                 ),
                 child: Center(
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green[100],
+                        minimumSize: Size(300, 100)),
                     child: Text(
-                      'Volver a intentar',
+                      'Continuar',
                       style: TextStyle(
                         fontSize: 40,
-                        color: Colors.green[100],
+                        color: Colors.black,
                       ),
                     ),
                     onPressed: () {
-                    Navigator.of(context).pushReplacement(
-                    new MaterialPageRoute(builder: (BuildContext context) {
-                    return new NivelesPage();
-                    }));},
+                      Navigator.pushReplacementNamed(context, 'niveles');
+                    },
                   ),
                 ),
               ),
@@ -68,9 +69,9 @@ Widget _cardPresentacion1() {
         Container(
           padding: EdgeInsets.all(10.0),
           child: Text(
-            'Los sentimos incorrecta.       Vuelve a intentarlo',
+            'Huy estuvo cerca. Vuelve a intentarlo',
             style: TextStyle(fontSize: 40),
-            textAlign: TextAlign.justify,
+            textAlign: TextAlign.center,
           ),
           color: Colors.purple[100],
         ),

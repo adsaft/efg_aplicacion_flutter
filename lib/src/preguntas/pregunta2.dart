@@ -28,97 +28,101 @@ class _Pregunta2PageState extends State<Pregunta2Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            Divider(),
+            SizedBox(height: 30),
             _cardPresentacion1(),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Que el Principe Feliz estaba llorando',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.blue[100],
+                    color: Colors.black
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'pregunta3');
+                    Navigator.pushReplacementNamed(context, 'pregunta3');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.yellow[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Que hacia mucho sol',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.yellow[100],
+                      color: Colors.black
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor:Colors.brown[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Que estaba lloviendo',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.brown[100],
+                      color: Colors.black
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Que el Pricipito Feliz estaba riendose',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.green[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
           ],
         ),
       ),
@@ -133,6 +137,7 @@ Widget _cardPresentacion1() {
         Container(
           padding: EdgeInsets.all(10.0),
           child: Text('¿Qué vio la Golondrina al mirar hacia arriba?',
+          textAlign: TextAlign.center,
               style: TextStyle(fontSize: 40)),
           color: Colors.pink[100],
         )
