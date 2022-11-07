@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Proyecto EFG',
       //home: InputPage(),
-      initialRoute: 'login',
+      initialRoute: 'home',
       routes: getApplicationRoutes(),
       onGenerateRoute: (RouteSettings settings) {
         print('Ruta llamada: ${settings.name}');
