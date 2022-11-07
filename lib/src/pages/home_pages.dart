@@ -200,7 +200,7 @@ Widget _cardPresentacion2() {
         Container(
           padding: EdgeInsets.all(10.0),
           child: Text(
-              'El saber es, Crecer',
+              'Un mundo más allá de la lectura',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 30)),
           color: Colors.pink[100],
