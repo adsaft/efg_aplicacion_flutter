@@ -28,97 +28,101 @@ class _Pregunta10PageState extends State<Pregunta10Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            Divider(),
+            SizedBox(height: 30),
             _cardPresentacion1(),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Zanahorias y Maiz',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.blue[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.yellow[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Mazanas y Zanahorias',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.yellow[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.brown[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Zanahorias y Alfalfa',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.brown[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'pregunta11');
+                    Navigator.pushReplacementNamed(context, 'pregunta11');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Maiz y Manzana',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.green[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
           ],
         ),
       ),
@@ -134,6 +138,7 @@ Widget _cardPresentacion1() {
           padding: EdgeInsets.all(10.0),
           child: Text(
               '¿Qué les da Natalia a las caballos y al burro para que coman?',
+              textAlign: TextAlign.center,
               style: TextStyle(fontSize: 40)),
           color: Colors.pink[100],
         )

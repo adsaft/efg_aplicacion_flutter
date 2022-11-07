@@ -28,97 +28,101 @@ class _Pregunta31PageState extends State<Pregunta31Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            Divider(),
+            SizedBox(height: 30),
             _cardPresentacion1(),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.purple[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Tigre Africano',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.blue[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.orange[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Pantera',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.orange[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'pregunta32');
+                    Navigator.pushReplacementNamed(context, 'pregunta32');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.cyan[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Juancho',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.cyan[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Guerpado',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.green[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
           ],
         ),
       ),
@@ -134,6 +138,7 @@ Widget _cardPresentacion1() {
           padding: EdgeInsets.all(10.0),
           child: Text(
               '¿Con qué nombre se conoce al leopardo cuando tiene pelaje oscuro?',
+              textAlign: TextAlign.center,
               style: TextStyle(fontSize: 40)),
           color: Colors.orange[100],
         )

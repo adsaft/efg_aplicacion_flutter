@@ -28,97 +28,101 @@ class _Pregunta18PageState extends State<Pregunta18Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            Divider(),
+            SizedBox(height: 30),
             _cardPresentacion1(),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Mover el cuerpo hacia los lados',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.blue[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.yellow[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Realizar una actividad intelectual',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.yellow[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.brown[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Mover objetos con la mente',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.brown[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
-              minWidth: 300.0,
-              height: 150.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Practicar una actividad fisica',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.green[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'pregunta19');
+                    Navigator.pushReplacementNamed(context, 'pregunta19');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
           ],
         ),
       ),
@@ -132,7 +136,8 @@ Widget _cardPresentacion1() {
       children: <Widget>[
         Container(
           padding: EdgeInsets.all(10.0),
-          child: Text('¿El Deporte consiste?', style: TextStyle(fontSize: 40)),
+          child: Text('¿El Deporte consiste?',
+              textAlign: TextAlign.center, style: TextStyle(fontSize: 40)),
           color: Colors.pink[100],
         )
       ],

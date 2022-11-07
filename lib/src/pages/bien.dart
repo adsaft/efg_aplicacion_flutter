@@ -33,8 +33,6 @@ class _BienPageState extends State<BienPage> {
               _cardPresentacion1(),
              SizedBox(height: 30),
               ButtonTheme(
-                minWidth: 300.0,
-                height: 150.0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(18.0),
                 ),

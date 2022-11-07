@@ -28,9 +28,9 @@ class _Pregunta21PageState extends State<Pregunta21Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            Divider(),
+            SizedBox(height: 30),
             _cardPresentacion1(),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
               minWidth: 300.0,
               height: 150.0,
@@ -39,20 +39,23 @@ class _Pregunta21PageState extends State<Pregunta21Page> {
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Insectos',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.red[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
               minWidth: 300.0,
               height: 150.0,
@@ -61,20 +64,23 @@ class _Pregunta21PageState extends State<Pregunta21Page> {
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.grey[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Aracnidos',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.grey[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'pregunta22');
+                    Navigator.pushReplacementNamed(context, 'pregunta22');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
               minWidth: 300.0,
               height: 150.0,
@@ -83,20 +89,23 @@ class _Pregunta21PageState extends State<Pregunta21Page> {
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.yellow[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Reptiles',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.yellow[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
             ButtonTheme(
               minWidth: 300.0,
               height: 150.0,
@@ -105,20 +114,23 @@ class _Pregunta21PageState extends State<Pregunta21Page> {
               ),
               child: Center(
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue[100],
+                      minimumSize: Size(300, 100)),
                   child: Text(
                     'Anfibios',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.blue[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'mal');
+                    Navigator.pushReplacementNamed(context, 'mal');
                   },
                 ),
               ),
             ),
-            Divider(),
+            SizedBox(height: 30),
           ],
         ),
       ),
@@ -132,7 +144,8 @@ Widget _cardPresentacion1() {
       children: <Widget>[
         Container(
           padding: EdgeInsets.all(10.0),
-          child: Text('¿Las Arañas son?', style: TextStyle(fontSize: 40)),
+          child: Text('¿Las Arañas son?',
+              textAlign: TextAlign.center, style: TextStyle(fontSize: 40)),
           color: Colors.amber[100],
         )
       ],
