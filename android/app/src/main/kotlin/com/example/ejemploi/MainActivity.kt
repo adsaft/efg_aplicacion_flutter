@@ -1,4 +1,4 @@
-package com.example.efg_aplicacion
+package com.example.ejemploi
 
 import io.flutter.embedding.android.FlutterActivity
 
