@@ -31,8 +31,7 @@ class _Login extends State<Login> {
             fit: BoxFit.cover,
           ),
         ),
-        child: 
-        ListView(children: [
+        child: ListView(children: [
           new Image.asset('lib/src/imagenes/EFG.png'),
           Padding(
               padding: const EdgeInsets.only(top: 5),
@@ -77,9 +76,7 @@ class _Login extends State<Login> {
         padding: const EdgeInsets.only(top: 45),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.green[100],
-            minimumSize: Size(300, 100)
-          ),
+              backgroundColor: Colors.green[100], minimumSize: Size(300, 100)),
           child: Text(
             'Entrar',
             style: TextStyle(fontSize: 30, color: Color.fromARGB(255, 0, 0, 0)),
@@ -93,9 +90,7 @@ class _Login extends State<Login> {
         padding: const EdgeInsets.only(top: 45),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.yellow[100],
-            minimumSize: Size(300, 100)
-          ),
+              backgroundColor: Colors.yellow[100], minimumSize: Size(300, 100)),
           child: Text(
             'Registrate',
             style: TextStyle(fontSize: 30, color: Color.fromARGB(255, 0, 0, 0)),
@@ -132,9 +127,12 @@ class _Login extends State<Login> {
             title: Text("Usuario Registrado"),
             actions: <Widget>[
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.orange[100],
+                    minimumSize: Size(300, 100)),
                 child: Text(
                   "Cerrar",
-                  style: TextStyle(color: Colors.blue),
+                  style: TextStyle(color: Colors.black),
                 ),
                 onPressed: () {
                   Navigator.of(context).pop();
