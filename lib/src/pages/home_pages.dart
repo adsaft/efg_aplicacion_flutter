@@ -1,6 +1,4 @@
-//import 'package:efg_aplicacion/src/registro/login.dart';
-//import 'package:efg_aplicacion/src/registro/pantalla2.dart';
-//import 'package:efg_aplicacion/src/registro/usuarios.dart';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -68,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 
                 SizedBox(height: 30),
-                ButtonTheme(
+                /*ButtonTheme(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0),
                   ),
@@ -87,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                       },
                     ),
                   ),
-                ),
+                ),*/
                 SizedBox(height: 30),
                 ButtonTheme(
                   shape: RoundedRectangleBorder(

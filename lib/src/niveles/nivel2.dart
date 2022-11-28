@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Nivel2Page extends StatefulWidget {
   Nivel2Page({Key key}) : super(key: key);
@@ -8,9 +9,38 @@ class Nivel2Page extends StatefulWidget {
 }
 
 class _Nivel2PageState extends State<Nivel2Page> {
+  YoutubePlayerController controller;
+
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  void initState(){
+    super.initState();
+
+    const url ='https://www.youtube.com/watch?v=UiaKfwqx_Ak';
+
+    controller = YoutubePlayerController(
+      initialVideoId: YoutubePlayer.convertUrlToId(url),
+    );
+  }
+
+
+  @override
+  void deactivate(){
+    controller.pause();
+    super.deactivate();
+  }
+  @override
+  void dispose(){
+    controller.dispose();
+
+    super.dispose();
+  }
+  @override
+  Widget build(BuildContext context) => YoutubePlayerBuilder(
+      player: YoutubePlayer(
+        controller: controller,
+      ),
+      builder: (context,player) =>
+      Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Text('El Sol y la Luna'),
@@ -27,7 +57,7 @@ class _Nivel2PageState extends State<Nivel2Page> {
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
             SizedBox(height: 30),
-            _cardPresentacion1(),
+            player,
             SizedBox(height: 30),
             ButtonTheme(
               shape: RoundedRectangleBorder(
@@ -52,9 +82,9 @@ class _Nivel2PageState extends State<Nivel2Page> {
           ],
         ),
       ),
-    );
+    )
+  );
   }
-}
 
 Widget _cardPresentacion1() {
   return Card(

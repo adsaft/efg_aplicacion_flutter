@@ -62,7 +62,7 @@ Widget _cardPresentacion1() {
       children: <Widget>[
         Container(
           child: Text(
-            'El lagarto está llorando.            La lagarta está llorando.             El lagarto y la lagarta con delantalitos blancos.                Han perdido sin querer su anillo de desposados.              ¡Ay! su anillito de plomo,                ¡ay! su anillito plomado Un cielo grande y sin gente monta en su globo a los pájaros.                     El sol, capitán redondo,lleva un chaleco de raso.                 ¡Miradlos qué viejos son!             ¡Qué viejos son los lagartos!                            ¡Ay, cómo lloran y lloran!¡Ay, ay, cómo están llorando!',
+            'El lagarto está llorando.                     La lagarta está llorando.                      El lagarto y la lagarta con delantalitos blancos.                         Han perdido sin querer su anillo de desposados.                   ¡Ay! su anillito de plomo,                              ¡ay! su anillito plomado Un cielo grande y sin gente monta en su globo a los pájaros.                     El sol, capitán redondo,lleva un chaleco de raso.                 ¡Miradlos qué viejos son!                                         ¡Qué viejos son los lagartos!                            ¡Ay, cómo lloran y lloran!¡Ay, ay, cómo están llorando!',
             style: TextStyle(fontSize: 30),
             textAlign: TextAlign.center,
             maxLines: null,
