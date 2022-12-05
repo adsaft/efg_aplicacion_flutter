@@ -12,16 +12,19 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         backgroundColor: Colors.green,
-        title: Text('Bienvenido a la Aplicacion EFG!'),
+        title: Text('Bienvenido a la Aplicacion EFG!', 
+        style: TextStyle(
+           fontSize: 17,        
+          ),
+          ),
       ),
       body: Container(
         decoration: BoxDecoration(
           color: Color.fromARGB(232, 69, 255, 255),
           image: DecorationImage(
             image: AssetImage("lib/src/imagenes/Fondo.jpg"),
-            fit: BoxFit.fitHeight,
+            fit: BoxFit.cover,
           ),
         ),
         child: ListView(
@@ -31,13 +34,13 @@ class _HomePageState extends State<HomePage> {
               child: Image.asset(
                 'lib/src/imagenes/EFG.png',
                 width: 300.0,
-                height: 300.0,
+                height: 250.0,
               ),
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-
+                SizedBox(height: 30),
                 _cardPresentacion2(),
                  SizedBox(height: 30),
                 _cardPresentacion1(),
@@ -56,6 +59,7 @@ class _HomePageState extends State<HomePage> {
                           'Juego',
                           style: TextStyle(
                             fontSize: 30,
+                            color: Colors.black,
                           ),
                         ),
                         onPressed: () {
@@ -100,6 +104,7 @@ class _HomePageState extends State<HomePage> {
                       child: Text('Ayuda',
                           style: TextStyle(
                             fontSize: 30,
+                            color: Colors.black,
                           )),
                       onPressed: () {
                         Navigator.pushNamed(context, 'ayuda');
@@ -120,14 +125,14 @@ class _HomePageState extends State<HomePage> {
               child: Center(
                 child: Text(
                   'Menu',
-                  style: TextStyle(fontSize: 40.0, color: Colors.white),
+                  style: TextStyle(fontSize: 40.0, color: Colors.white),textAlign: TextAlign.center,
                 ),
               ),
               decoration: BoxDecoration(
                 color: Colors.green,
               ),
             ),
-            ListTile(
+            /*ListTile(
               title: Text('Perfil',
                   style: TextStyle(
                     fontSize: 20.0,
@@ -136,29 +141,31 @@ class _HomePageState extends State<HomePage> {
               onTap: () {
                 Navigator.pushNamed(context, 'perfil');
               },
-            ),
+            ),*/
+            SizedBox(height: 50),
             ListTile(
               title: Text('Libros',
-                  style: TextStyle(fontSize: 20.0, color: Colors.black)),
+                  style: TextStyle(fontSize: 30.0, color: Colors.black),textAlign: TextAlign.center,),
               onTap: () {
                 Navigator.pushNamed(context, 'libros');
               },
             ),
+            SizedBox(height: 50),
             ListTile(
               title: Text('Copyright',
-                  style: TextStyle(fontSize: 20.0, color: Colors.black)),
+                  style: TextStyle(fontSize: 30.0, color: Colors.black),textAlign: TextAlign.center,),
               onTap: () {
                 Navigator.pushNamed(context, 'copyright');
               },
             ),
-            ListTile(
+            /*ListTile(
               title: Text('Usuarios',
                   style: TextStyle(fontSize: 20.0, color: Colors.black)),
               onTap: () {
                 Navigator.pushNamed(context, 'pantalla1');
               },
             ),
-            /*ListTile(
+            ListTile(
               title: Text('Base de Datos',
                   style: TextStyle(fontSize: 20.0, color: Colors.black)),
               onTap: () {

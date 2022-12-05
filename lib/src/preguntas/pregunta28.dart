@@ -41,7 +41,7 @@ class _Pregunta28PageState extends State<Pregunta28Page> {
                       backgroundColor: Colors.grey[100],
                       minimumSize: Size(300, 100)),
                   child: Text(
-                    'Es un Molusco',
+                    'Es un molusco',
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
@@ -64,7 +64,7 @@ class _Pregunta28PageState extends State<Pregunta28Page> {
                       backgroundColor: Colors.yellow[100],
                       minimumSize: Size(300, 100)),
                   child: Text(
-                    'Es un Pez',
+                    'Es un pez',
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,

@@ -113,7 +113,7 @@ class _Pregunta14PageState extends State<Pregunta14Page> {
                     'De papel',
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.green[100],
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {

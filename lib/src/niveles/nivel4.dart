@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Nivel4Page extends StatefulWidget {
   Nivel4Page({Key key}) : super(key: key);
@@ -8,9 +9,38 @@ class Nivel4Page extends StatefulWidget {
 }
 
 class _Nivel4PageState extends State<Nivel4Page> {
+   YoutubePlayerController controller;
+
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  void initState(){
+    super.initState();
+
+    const url ='https://www.youtube.com/watch?v=62hWNjs7H1E';
+
+    controller = YoutubePlayerController(
+    initialVideoId: YoutubePlayer.convertUrlToId(url),
+    );
+  }
+
+
+  @override
+  void deactivate(){
+    controller.pause();
+    super.deactivate();
+  }
+  @override
+  void dispose(){
+    controller.dispose();
+
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => YoutubePlayerBuilder(
+    player: YoutubePlayer(
+      controller: controller,
+      ),
+    builder: (context,player) =>  Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Text('El lagarto está llorando'),
@@ -26,8 +56,9 @@ class _Nivel4PageState extends State<Nivel4Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
-            SizedBox(height: 30),
             _cardPresentacion1(),
+            SizedBox(height: 30),
+            player,
             SizedBox(height: 30),
             ButtonTheme(
               shape: RoundedRectangleBorder(
@@ -52,9 +83,8 @@ class _Nivel4PageState extends State<Nivel4Page> {
           ],
         ),
       ),
-    );
+    ));
   }
-}
 
 Widget _cardPresentacion1() {
   return Card(
@@ -62,7 +92,8 @@ Widget _cardPresentacion1() {
       children: <Widget>[
         Container(
           child: Text(
-            'El lagarto está llorando.                     La lagarta está llorando.                      El lagarto y la lagarta con delantalitos blancos.                         Han perdido sin querer su anillo de desposados.                   ¡Ay! su anillito de plomo,                              ¡ay! su anillito plomado Un cielo grande y sin gente monta en su globo a los pájaros.                     El sol, capitán redondo,lleva un chaleco de raso.                 ¡Miradlos qué viejos son!                                         ¡Qué viejos son los lagartos!                            ¡Ay, cómo lloran y lloran!¡Ay, ay, cómo están llorando!',
+            /*'El lagarto está llorando.                     La lagarta está llorando.                      El lagarto y la lagarta con delantalitos blancos.                         Han perdido sin querer su anillo de desposados.                   ¡Ay! su anillito de plomo,                              ¡ay! su anillito plomado Un cielo grande y sin gente monta en su globo a los pájaros.                     El sol, capitán redondo,lleva un chaleco de raso.                 ¡Miradlos qué viejos son!                                         ¡Qué viejos son los lagartos!                            ¡Ay, cómo lloran y lloran!¡Ay, ay, cómo están llorando!',*/
+            'Mire el video completo y responda las preguntas.',
             style: TextStyle(fontSize: 30),
             textAlign: TextAlign.center,
             maxLines: null,

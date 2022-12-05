@@ -88,7 +88,7 @@ class _Pregunta9PageState extends State<Pregunta9Page> {
                       minimumSize: Size(300, 100)),
                   child: Text(
                     'En una caja de Carton',
-                    style: TextStyle(fontSize: 30, color: Colors.black),
+                    style: TextStyle(fontSize: 30, color: Colors.black),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -107,7 +107,7 @@ class _Pregunta9PageState extends State<Pregunta9Page> {
                       backgroundColor: Colors.blue[100],
                       minimumSize: Size(300, 100)),
                   child: Text(
-                    'una Bolsa de carton',
+                    'Una Bolsa de carton',
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,

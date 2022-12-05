@@ -63,7 +63,7 @@ class _Pregunta1PageState extends State<Pregunta1Page> {
                       backgroundColor: Colors.grey[100],
                       minimumSize: Size(300, 100)),
                   child: Text(
-                    'plomo',
+                    'Plomo',
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                   onPressed: () {

@@ -49,7 +49,7 @@ class _NivelesPageState extends State<NivelesPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'nivel1');
+                      Navigator.pushReplacementNamed(context, 'nivel1');
                     },
                   ),
                 ),
@@ -74,7 +74,7 @@ class _NivelesPageState extends State<NivelesPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'nivel2');
+                      Navigator.pushReplacementNamed(context, 'nivel2');
                     },
                   ),
                 ),
@@ -99,7 +99,7 @@ class _NivelesPageState extends State<NivelesPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'nivel3');
+                      Navigator.pushReplacementNamed(context, 'nivel3');
                     },
                   ),
                 ),
@@ -124,7 +124,7 @@ class _NivelesPageState extends State<NivelesPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'nivel4');
+                      Navigator.pushReplacementNamed(context, 'nivel4');
                     },
                   ),
                 ),
@@ -149,7 +149,7 @@ class _NivelesPageState extends State<NivelesPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'nivel5');
+                      Navigator.pushReplacementNamed(context, 'nivel5');
                     },
                   ),
                 ),
@@ -174,7 +174,7 @@ class _NivelesPageState extends State<NivelesPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'nivel6');
+                      Navigator.pushReplacementNamed(context, 'nivel6');
                     },
                   ),
                 ),
@@ -199,7 +199,7 @@ class _NivelesPageState extends State<NivelesPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'nivel7');
+                      Navigator.pushReplacementNamed(context, 'nivel7');
                     },
                   ),
                 ),
@@ -224,7 +224,7 @@ class _NivelesPageState extends State<NivelesPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'nivel8');
+                      Navigator.pushReplacementNamed(context, 'nivel8');
                     },
                   ),
                 ),
@@ -249,7 +249,7 @@ class _NivelesPageState extends State<NivelesPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'nivel9');
+                      Navigator.pushReplacementNamed(context, 'nivel9');
                     },
                   ),
                 ),
@@ -274,7 +274,7 @@ class _NivelesPageState extends State<NivelesPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, 'nivel10');
+                      Navigator.pushReplacementNamed(context, 'nivel10');
                     },
                   ),
                 ),

@@ -12,7 +12,6 @@ import 'package:efg_aplicacion/src/pages/perfil_page.dart';
 import 'package:efg_aplicacion/src/pages/json_page.dart';
 import 'package:efg_aplicacion/src/registro/login.dart';
 import 'package:efg_aplicacion/src/registro/pantalla1.dart';
-import 'package:efg_aplicacion/src/niveles/nivel0.dart';
 import 'package:efg_aplicacion/src/niveles/nivel1.dart';
 import 'package:efg_aplicacion/src/niveles/nivel2.dart';
 import 'package:efg_aplicacion/src/niveles/nivel3.dart';
@@ -90,7 +89,6 @@ Map<String, WidgetBuilder> getApplicationRoutes() {
     'login': (BuildContext context) => Login(),
     'pantalla1': (BuildContext context) => Pantalla1(),
     //'basedatos': (BuildContext context) => BaseDeDatosPage(),
-    'nivel0': (BuildContext context) => Nivel0Page(),
     'nivel1': (BuildContext context) => Nivel1Page(),
     'nivel2': (BuildContext context) => Nivel2Page(),
     'nivel3': (BuildContext context) => Nivel3Page(),

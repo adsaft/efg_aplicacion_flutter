@@ -45,7 +45,7 @@ class _Pregunta3PageState extends State<Pregunta3Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -68,7 +68,7 @@ class _Pregunta3PageState extends State<Pregunta3Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -91,7 +91,7 @@ class _Pregunta3PageState extends State<Pregunta3Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'pregunta4');
@@ -114,7 +114,7 @@ class _Pregunta3PageState extends State<Pregunta3Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');

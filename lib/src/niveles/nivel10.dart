@@ -67,7 +67,7 @@ class _Nivel10PageState extends State<Nivel10Page> {
               style: TextStyle(fontSize: 30),
               textAlign: TextAlign.center,
             ),
-            color: Colors.purple[100],
+            color: Colors.white,
           )
         ],
       ),

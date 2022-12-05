@@ -45,7 +45,7 @@ class _Pregunta26PageState extends State<Pregunta26Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -65,7 +65,7 @@ class _Pregunta26PageState extends State<Pregunta26Page> {
                       minimumSize: Size(300, 100)),
                   child: Text(
                     'Puede vivir por mucho tiempo',
-                    style: TextStyle(fontSize: 30, color: Colors.black),
+                    style: TextStyle(fontSize: 30, color: Colors.black),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -88,7 +88,7 @@ class _Pregunta26PageState extends State<Pregunta26Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -108,7 +108,7 @@ class _Pregunta26PageState extends State<Pregunta26Page> {
                       minimumSize: Size(300, 100)),
                   child: Text(
                     'Puede ser macho o hembra',
-                    style: TextStyle(fontSize: 30, color: Colors.black),
+                    style: TextStyle(fontSize: 30, color: Colors.black),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'pregunta27');

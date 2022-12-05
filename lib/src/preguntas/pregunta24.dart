@@ -45,7 +45,7 @@ class _Pregunta24PageState extends State<Pregunta24Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -65,7 +65,7 @@ class _Pregunta24PageState extends State<Pregunta24Page> {
                       minimumSize: Size(300, 100)),
                   child: Text(
                     'Las arañas se alimentan de animales',
-                    style: TextStyle(fontSize: 30, color: Colors.black),
+                    style: TextStyle(fontSize: 30, color: Colors.black),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'bien');
@@ -88,7 +88,7 @@ class _Pregunta24PageState extends State<Pregunta24Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -111,7 +111,7 @@ class _Pregunta24PageState extends State<Pregunta24Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');

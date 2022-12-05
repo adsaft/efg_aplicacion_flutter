@@ -66,9 +66,9 @@ class _Pregunta10PageState extends State<Pregunta10Page> {
                   child: Text(
                     'Mazanas y Zanahorias',
                     style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 25,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');

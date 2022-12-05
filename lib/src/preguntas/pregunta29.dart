@@ -42,7 +42,7 @@ class _Pregunta29PageState extends State<Pregunta29Page> {
                       minimumSize: Size(300, 100)),
                   child: Text(
                     'El leopardo es mas pequeño',
-                    style: TextStyle(fontSize: 30, color: Colors.black),
+                    style: TextStyle(fontSize: 30, color: Colors.black),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'pregunta30');
@@ -65,7 +65,7 @@ class _Pregunta29PageState extends State<Pregunta29Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -88,7 +88,7 @@ class _Pregunta29PageState extends State<Pregunta29Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -111,7 +111,7 @@ class _Pregunta29PageState extends State<Pregunta29Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');

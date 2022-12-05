@@ -43,9 +43,9 @@ class _Pregunta15PageState extends State<Pregunta15Page> {
                   child: Text(
                     'Porque estan asustados',
                     style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 25,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -91,7 +91,7 @@ class _Pregunta15PageState extends State<Pregunta15Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'pregunta16');

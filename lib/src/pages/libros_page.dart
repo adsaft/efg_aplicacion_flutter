@@ -12,6 +12,7 @@ class _LibrosPageState extends State<LibrosPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: Colors.green,
         title: Text('Libros'),
       ),
@@ -68,7 +69,7 @@ class _LibrosPageState extends State<LibrosPage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, 'libro1');
+        Navigator.pushReplacementNamed(context, 'libro1');
       },
     );
   }
@@ -90,7 +91,7 @@ class _LibrosPageState extends State<LibrosPage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, 'libro2');
+        Navigator.pushReplacementNamed(context, 'libro2');
       },
     );
   }
@@ -112,7 +113,7 @@ class _LibrosPageState extends State<LibrosPage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, 'libro3');
+        Navigator.pushReplacementNamed(context, 'libro3');
       },
     );
   }
@@ -134,7 +135,7 @@ class _LibrosPageState extends State<LibrosPage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, 'libro4');
+        Navigator.pushReplacementNamed(context, 'libro4');
       },
     );
   }
@@ -156,7 +157,7 @@ class _LibrosPageState extends State<LibrosPage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, 'libro5');
+        Navigator.pushReplacementNamed(context, 'libro5');
       },
     );
   }
@@ -178,7 +179,7 @@ class _LibrosPageState extends State<LibrosPage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, 'libro6');
+        Navigator.pushReplacementNamed(context, 'libro6');
       },
     );
   }
@@ -200,7 +201,7 @@ class _LibrosPageState extends State<LibrosPage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, 'libro7');
+        Navigator.pushReplacementNamed(context, 'libro7');
       },
     );
   }
@@ -222,7 +223,7 @@ class _LibrosPageState extends State<LibrosPage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, 'libro8');
+        Navigator.pushReplacementNamed(context, 'libro8');
       },
     );
   }
@@ -244,7 +245,7 @@ class _LibrosPageState extends State<LibrosPage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, 'libro9');
+        Navigator.pushReplacementNamed(context, 'libro9');
       },
     );
   }
@@ -266,7 +267,7 @@ class _LibrosPageState extends State<LibrosPage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, 'libro10');
+        Navigator.pushReplacementNamed(context, 'libro10');
       },
     );
   }

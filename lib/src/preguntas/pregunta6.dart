@@ -39,10 +39,15 @@ class _Pregunta6PageState extends State<Pregunta6Page> {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue[100],
-                      minimumSize: Size(300, 100)),
-                  child: Text(
-                    'Pasteles de Merengue',
-                    style: TextStyle(fontSize: 30, color: Colors.black),
+                      minimumSize: Size(300,100)),
+                  child:
+                  Text(
+                    'Pasteles de merengue',
+                    style:
+                    TextStyle(
+                    fontSize: 25, 
+                    color: Colors.black,
+                    ),
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -84,7 +89,7 @@ class _Pregunta6PageState extends State<Pregunta6Page> {
                       backgroundColor: Colors.brown[100],
                       minimumSize: Size(300, 100)),
                   child: Text(
-                    'Pasteles de Arroz',
+                    'Pasteles de arroz',
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,

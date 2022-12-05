@@ -45,7 +45,7 @@ class _Pregunta32PageState extends State<Pregunta32Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -68,7 +68,7 @@ class _Pregunta32PageState extends State<Pregunta32Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -91,7 +91,7 @@ class _Pregunta32PageState extends State<Pregunta32Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -110,11 +110,11 @@ class _Pregunta32PageState extends State<Pregunta32Page> {
                       backgroundColor: Colors.blue[100],
                       minimumSize: Size(300, 100)),
                   child: Text(
-                    'Vive en zonas Polares',
+                    'Vive en zonas polares',
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'bien');

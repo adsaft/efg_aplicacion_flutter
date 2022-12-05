@@ -45,7 +45,7 @@ class _Pregunta17PageState extends State<Pregunta17Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -65,7 +65,7 @@ class _Pregunta17PageState extends State<Pregunta17Page> {
                       minimumSize: Size(300, 100)),
                   child: Text(
                     'Deporte de Competicion',
-                    style: TextStyle(fontSize: 30, color: Colors.black),
+                    style: TextStyle(fontSize: 30, color: Colors.black),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'pregunta18');
@@ -88,7 +88,7 @@ class _Pregunta17PageState extends State<Pregunta17Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
@@ -111,7 +111,7 @@ class _Pregunta17PageState extends State<Pregunta17Page> {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
-                    ),
+                    ),textAlign: TextAlign.center,
                   ),
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, 'mal');
