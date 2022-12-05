@@ -29,6 +29,9 @@ class _NivelesPageState extends State<NivelesPage> {
         child: ListView(
             padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
             children: <Widget>[
+              Column(mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                _cardPresentacion3(),
               SizedBox(height: 30),
               ButtonTheme(
                 minWidth: 300.0,
@@ -279,9 +282,26 @@ class _NivelesPageState extends State<NivelesPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 30),]),
             ]),
       ),
     );
   }
+}
+
+Widget _cardPresentacion3() {
+  return Card(
+    child: Column(
+      children: <Widget>[
+        Container(
+          padding: EdgeInsets.all(10.0),
+          child: Text(
+              'Seleciona un nivel para comenzar del mas facil al mas dificil',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 30)),
+          color: Colors.pink[100],
+        )
+      ],
+    ),
+  );
 }

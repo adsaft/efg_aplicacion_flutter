@@ -26,6 +26,7 @@ class _Nivel7PageState extends State<Nivel7Page> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
           children: <Widget>[
+            _cardPresentacion2(),
             SizedBox(height: 30),
             _cardPresentacion1(),
             SizedBox(height: 30),
@@ -54,7 +55,7 @@ class _Nivel7PageState extends State<Nivel7Page> {
       ),
     );
   }
-
+}
   Widget _cardPresentacion1() {
     return Card(
       child: Column(
@@ -73,4 +74,22 @@ class _Nivel7PageState extends State<Nivel7Page> {
       ),
     );
   }
-}
+ Widget _cardPresentacion2() {
+    return Card(
+      child: Column(
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(15),
+            width: double.infinity,
+            child: Text(
+              'Lea el texto completo y para al final responder una serie de preguntas',
+              style: TextStyle(fontSize: 30),
+              textAlign: TextAlign.center,
+            ),
+            color: Colors.green[100],
+          )
+        ],
+      ),
+    );
+  }
+

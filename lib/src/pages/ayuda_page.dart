@@ -44,7 +44,7 @@ Widget _cardPresentacion1() {
           padding: EdgeInsets.all(10.0),
           child: Text(
               'Si Quisieras comentar un error manda un Correo a Miguel.yuen.04.2@gmail.com',
-              style: TextStyle(fontSize: 40)),
+              style: TextStyle(fontSize: 40),textAlign: TextAlign.center,),
           color: Colors.yellow[100],
         )
       ],
@@ -60,7 +60,7 @@ Widget _cardPresentacion2() {
           padding: EdgeInsets.all(10.0),
           child: Text(
               'Si Quisieras comentar un error o preguntar algo a un desarrollador marca al 9981551183',
-              style: TextStyle(fontSize: 40)),
+              style: TextStyle(fontSize: 40),textAlign: TextAlign.center,),
           color: Colors.yellow[100],
         )
       ],

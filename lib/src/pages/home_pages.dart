@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                         child: Text(
                           'Juego',
                           style: TextStyle(
-                            fontSize: 30,
+                            fontSize: 40,
                             color: Colors.black,
                           ),
                         ),
@@ -68,8 +68,6 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
-                
-                SizedBox(height: 30),
                 /*ButtonTheme(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -103,7 +101,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       child: Text('Ayuda',
                           style: TextStyle(
-                            fontSize: 30,
+                            fontSize: 40,
                             color: Colors.black,
                           )),
                       onPressed: () {
