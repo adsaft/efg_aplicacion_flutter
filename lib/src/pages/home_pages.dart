@@ -184,7 +184,7 @@ class _HomePageState extends State<HomePage> {
           Container(
             padding: EdgeInsets.all(10.0),
             child: Text(
-                'Hola, con esta pantalla puedes checar tus datos con la barra de ayuda lateral a la izquierda.',
+                'Hola, con esta pantalla puedes iniciar a jugar los cuento presionando en juego',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 20,
